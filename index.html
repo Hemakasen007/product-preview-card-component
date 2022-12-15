@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;800;900&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@300&family=Roboto:wght@300;400;900&display=swap'); </style>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .main-card{
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      margin-top: 10%;
+      justify-content: center;
+      align-items: center;
+      /* border: 2px solid red; */
+      /* width: 40rem; */
+      /* border-radius: 25px; */
+      
+
+    }
+
+    .body-bg{
+      background-color: hsl(30, 38%, 92%);
+    }
+
+    .both-div{
+      display: flex;
+      width: 600px;
+      justify-content: flex-start;
+      align-items: center;
+      /* border: 2px solid; */
+      border-radius: 25px;
+
+
+    }
+
+    .img-main{
+      border: 1px ;
+      border-radius: 15px 0px 0px 15px;
+    }
+
+    .sub-infocard{
+       background-color: white;
+       width: 300px;
+       height: 400px;
+       padding-left: 8px;
+       /* border: 1px solid; */
+       border-radius: 0px 15px 15px 0px;
+
+    }
+
+    .preview{
+      font-family: Montserrat,'Courier New', Courier, monospace;
+      font-weight: 500;
+      letter-spacing: 1ex;
+      line-height: 0.01in;
+  
+    }
+
+    .heading-name{
+      font-family: Fraunces,'Courier New', Courier, monospace;
+      font-weight: 700;
+      max-width: 200px;
+    }
+
+    .descrip-p{
+      font-family: Montserrat,'Courier New', Courier, monospace;
+      font-weight: 200;
+      font-size: small;
+      line-height: 0.25in;
+      max-width: 250px;
+
+    }
+
+    .prices{
+      font-family: Fraunces,'Courier New', Courier, monospace;
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+      font-size: 20px;
+    }
+
+    .add-to-cart{
+      font-family: Montserrat,'Courier New', Courier, monospace;
+      padding: 10px;
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      border-radius: 5px;
+      border: none;
+      width: 250px;
+    }
+
+    .sub-info-text-container{
+      box-sizing: border-box;
+      width: 250px;
+      height: 80%;
+      padding-left: 10px;
+      padding-bottom: 50px;
+    }
+
+
+  </style>
+</head>
+<body class="body-bg">
+
+  <!-- card -->
+  <div class="main-card">
+      <div class="both-div">
+        <img src="./images/image-product-desktop.jpg" width="300px" height="400px" class="img-main"/>
+        <div class="sub-infocard">
+          <div class="sub-info-text-container">
+            <p class="preview"> PREVIEW </p>
+            <h1 class="heading-name">Gabrielle Essence Eau De Parfum</h1>
+            <p class="descrip-p">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+             Perfumer-Creator for the House of CHANEL.</p>
+             <p class="prices">$149.99</p>
+             <button class="add-to-cart">
+               <img src="./images/icon-cart.svg" alt="lol" width="10px" height="10px">
+               Add to Cart
+             </button>
+          </div>
+          
+        </div>
+      </div>
+      
+  </div>
+
+
+
+  <!-- Preview
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart
+   -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hemaka</a>.
+  </div>
+</body>
+</html>
